@@ -1,0 +1,20 @@
+name: VotifierDisplay
+version: '${project.version}'
+main: com.github.tsuoihito.votifierdisplay.VotifierDisplay
+api-version: 1.16
+authors: [ tsuoihito ]
+description: A spigot plugin that shows a display of vote-ranking
+
+commands:
+  votifierdisplay:
+    aliases:
+      - vd
+    permission: votifierdisplay.admin
+
+permissions:
+  votifierdisplay.admin:
+    default: op
+
+depends:
+  - HolographicDisplays
+  - Votifier
